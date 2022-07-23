@@ -1,9 +1,16 @@
-// TODO: Include packages needed for this application
-const inquirer = require("inquirer");
-const fs = require("fs");
-const generateMarkdown = require("./utils/generateMarkdown");
+// Include packages needed for this application
 
-// TODO: Create an array of questions for user input
+// The require method lets your application know that it needs to use the inquirer package to execute the code below.
+const inquirer = require("inquirer");
+
+// The fs module provides a lot of very useful functionality to access and interact with the file system.
+// Once you do so, you have access to all its methods, which include: fs.
+const fs = require("fs");
+
+// This function is contained in the GenerateMarkdown file
+const { generateMarkdown } = require("./utils/generateMarkdown");
+
+// Create an array of questions for user input
 const questions = () => {
   return inquirer.prompt([
     {
@@ -46,7 +53,7 @@ const questions = () => {
       type: "list",
       name: "license",
       message: "Select the license used in your Project",
-      choices: ["No License", "Apache 2-0", "BSD", "GPL-3.0", "MIT"],
+      choices: ["No License", "Apache 2-0", "MPL", "GPL-3.0", "MIT", "Boost"],
     },
     {
       type: "input",
@@ -64,18 +71,28 @@ const questions = () => {
       message: "Enter your GitHub username",
     },
     {
-        type: "input",
-        name: "email",
-        message: "Enter email address,
-      },
+      type: "input",
+      name: "email",
+      message: "Enter email address",
+    },
   ]);
 };
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
 // TODO: Create a function to initialize app
-function init() {}
+questions().then((readmeData) => {
+    // TODO: Create a function to write README file
+  fs.writeFile(".dist/README.md", generateMarkdown(readmeData), (err) => {
+    if (err) throw new Error(err);
+
+    console.log(
+      "Page created! Check out index.html in this directory to see it!"
+    );
+  });
+});
+
+//function writeToFile(fileName, data) {}
+
+//function init() {}
 
 // Function call to initialize app
-init();
+//init();

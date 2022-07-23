@@ -2,7 +2,6 @@ module.exports = generateMarkdown;
 
 // TODO: Create a function that returns a license badge based on which license is passed in
 
-
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {}
 
@@ -44,12 +43,10 @@ ${inputData.contributing}
 ## Tests
 ${inputData.tests}
 
-## Questions 
-${inputData.questions}
+## Questions?
 
-GitHub: https://github.com${inputData.githubUser}
+GitHub: https://github.com/${inputData.githubUser}
 
 How To Reach Me For Additional Questions: ${inputData.email}
 `;
 }
-
