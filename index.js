@@ -8,7 +8,7 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 
 // This function is contained in the GenerateMarkdown file
-const { generateMarkdown } = require("./utils/generateMarkdown");
+const generateMarkdown = require("./utils/generateMarkdown");
 
 // Create an array of questions for user input
 const questions = () => {

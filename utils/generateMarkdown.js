@@ -1,4 +1,5 @@
-module.exports = generateMarkdown;
+module.exports = inputData => {
+
 
 // TODO: Create a function that returns a license badge based on which license is passed in
 
@@ -14,8 +15,8 @@ function renderLicenseLink(license) {}
 function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title}
+//function generateMarkdown(data) {
+  return `# ${inputData.title}
 
   ## Description:
   ${inputData.description}
