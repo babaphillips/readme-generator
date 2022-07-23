@@ -1,7 +1,7 @@
-# a
+# A
 
 ## Description:
-a
+A
   
 ## Table of Content
 - [Installation](#Installation)
@@ -12,22 +12,22 @@ a
 - [Questions](#Questions)
 
 ## Installation
-a
+A
 
 ## Usage 
-a
+A
 
 ## License 
-undefined
+This application is licensed under the [MPL 2.0](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba#MPL 2.0) license.
 
 ## Contributing
-a
+A
 
 ## Tests
-a
+A
 
 ## Questions?
 
-GitHub: https://github.com/a
+GitHub: https://github.com/A
 
-How To Reach Me For Additional Questions: a
+How To Reach Me For Additional Questions: A

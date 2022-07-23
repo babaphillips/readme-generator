@@ -26,8 +26,7 @@ module.exports = (inputData) => {
   // If there is no license, return an empty string
   function renderLicenseLink(license) {
     if (license !== "No License") {
-      lowerLicense = license.toLowerCase();
-      return `[${license}](https://choosealicense.com/licenses/${lowerLicense}/)`;
+      return `[${license}](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba#${license})`;
     } else {
       return ``;
     }
