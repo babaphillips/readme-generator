@@ -1,7 +1,14 @@
 // TODO: Include packages needed for this application
+const { generateMarkdown } = require('./utils/README.md');
+const inquirer = require("inquirer");
+const fs = require("fs");
 
 // TODO: Create an array of questions for user input
-const questions = [];
+const questions = () => {
+    return inquirer.prompt([
+        type: "input",
+    ])
+};
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
