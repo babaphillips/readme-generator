@@ -43,11 +43,27 @@ const questions = () => {
       type: "input",
       name: "installation",
       message: "Enter installation instructions for your Project",
+      validate: (installationInput) => {
+        if (installationInput) {
+          return true;
+        } else {
+          console.log("Please enter your instructions for your Project!");
+          return false;
+        }
+      },
     },
     {
       type: "input",
       name: "usage",
       message: "Enter usage information for your Project",
+      validate: (usageInput) => {
+        if (usageInput) {
+          return true;
+        } else {
+          console.log("Please enter usage information for your Project!");
+          return false;
+        }
+      },
     },
     {
       type: "list",
@@ -66,21 +82,53 @@ const questions = () => {
       type: "input",
       name: "contributing",
       message: "Enter contribution guidelines to your Project",
+      validate: (contributingInput) => {
+        if (contributingInput) {
+          return true;
+        } else {
+          console.log("Please enter contribution guidelines to your Project!");
+          return false;
+        }
+      },
     },
     {
       type: "input",
       name: "tests",
       message: "Enter test instructions for your Project",
+      validate: (testsInput) => {
+        if (testsInput) {
+          return true;
+        } else {
+          console.log("Please enter your test instructions for your Project!");
+          return false;
+        }
+      },
     },
     {
       type: "input",
-      name: "githubUser",
+      name: "github",
       message: "Enter your GitHub username",
+      validate: (githubInput) => {
+        if (githubInput) {
+          return true;
+        } else {
+          console.log("Please enter your GitHub username!");
+          return false;
+        }
+      },
     },
     {
       type: "input",
       name: "email",
       message: "Enter email address",
+      validate: (titleInput) => {
+        if (titleInput) {
+          return true;
+        } else {
+          console.log("Please enter your email address!");
+          return false;
+        }
+      },
     },
   ]);
 };
