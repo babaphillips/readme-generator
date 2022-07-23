@@ -50,7 +50,7 @@ const questions = () => {
       message: "Enter usage information for your Project",
     },
     {
-      type: "list",
+      type: "checkbox",
       name: "license",
       message: "Select the license used in your Project",
       choices: ["No License", "Apache 2-0", "MPL", "GPL-3.0", "MIT", "Boost"],
