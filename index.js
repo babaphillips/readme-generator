@@ -58,7 +58,7 @@ const questions = () => {
     {
       type: "input",
       name: "contributing",
-      message: "Enter contributions to your Project",
+      message: "Enter contribution guidelines to your Project",
     },
     {
       type: "input",
@@ -78,21 +78,15 @@ const questions = () => {
   ]);
 };
 
-// TODO: Create a function to initialize app
+// Create a function to initialize app
 questions().then((readmeData) => {
-  // TODO: Create a function to write README file
+  // Create a function to write README file
   fs.writeFile("./dist/README.md", generateMarkdown(readmeData), (err) => {
     if (err) throw new Error(err);
     else
       console.log(
-        "README created! Check out README.md in the dist folder to see it!"
+        "README.md created! Check out README.md in the dist folder to see it!"
       );
   });
 });
 
-//function writeToFile(fileName, data) {}
-
-//function init() {}
-
-// Function call to initialize app
-//init();
