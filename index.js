@@ -140,7 +140,7 @@ questions().then((readmeData) => {
     if (err) throw new Error(err);
     else
       console.log(
-        "README.md created! Check out README.md in the dist folder to see it!"
+        "README.md created!"
       );
   });
 });

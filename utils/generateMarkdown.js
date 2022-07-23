@@ -70,8 +70,6 @@ ${inputData.tests}
 
 Check out my other projects at my Github here: [Github](https://github.com/${inputData.github})
 
-GitHub: https://github.com/${inputData.github}
-
 How To Reach Me For Additional Questions: ${inputData.email}
 `;
 };
