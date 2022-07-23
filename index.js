@@ -8,7 +8,7 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 
 // This function is contained in the GenerateMarkdown file
-const generateMarkdown = require("./utils/generateMarkdown");
+const renderReadme = require("./utils/generateMarkdown");
 
 // Create an array of questions for user input
 const questions = () => {
@@ -50,13 +50,13 @@ const questions = () => {
       message: "Enter usage information for your Project",
     },
     {
-      type: "checkbox",
+      type: "list",
       name: "license",
       message: "Select the license used in your Project",
       choices: [
         "No License",
-        "Apache 2-0",
-        "MPL 2.0",
+        "Apache_2_0",
+        "MPL_2.0",
         "GPL-3.0",
         "MIT",
         "Boost",
@@ -88,7 +88,7 @@ const questions = () => {
 // Create a function to initialize app
 questions().then((readmeData) => {
   // Create a function to write README file
-  fs.writeFile("./dist/README.md", generateMarkdown(readmeData), (err) => {
+  fs.writeFile("README.md", renderReadme(readmeData), (err) => {
     if (err) throw new Error(err);
     else
       console.log(
