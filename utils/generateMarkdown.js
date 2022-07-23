@@ -1,3 +1,5 @@
+module.exports = generateMarkdown;
+
 // TODO: Create a function that returns a license badge based on which license is passed in
 
 
@@ -51,4 +53,3 @@ How To Reach Me For Additional Questions: ${inputData.email}
 `;
 }
 
-module.exports = generateMarkdown;

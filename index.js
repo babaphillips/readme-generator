@@ -1,5 +1,5 @@
 // TODO: Include packages needed for this application
-const { generateMarkdown } = require("./utils/README.md");
+const { generateMarkdown } = require("./utils/generateMarkdown");
 const inquirer = require("inquirer");
 const fs = require("fs");
 
@@ -8,13 +8,26 @@ const questions = () => {
   return inquirer.prompt([
     {
       type: "input",
-      name: "name",
-      message: "What is your name? (Required)",
+      name: "title",
+      message: "What is your Project Title? (Required)",
       validate: (nameInput) => {
         if (nameInput) {
           return true;
         } else {
-          console.log("Please enter your name!");
+          console.log("Please enter your Project Title!");
+          return false;
+        }
+      },
+    },
+    {
+      type: "input",
+      name: "description",
+      message: "Enter a description for your Project (Required)",
+      validate: (descriptionInput) => {
+        if (descriptionInput) {
+          return true;
+        } else {
+          console.log("Please enter your Project description!");
           return false;
         }
       },
