@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
-const { generateMarkdown } = require("./utils/generateMarkdown");
 const inquirer = require("inquirer");
 const fs = require("fs");
+const generateMarkdown = require("./utils/generateMarkdown");
 
 // TODO: Create an array of questions for user input
 const questions = () => {
@@ -10,8 +10,8 @@ const questions = () => {
       type: "input",
       name: "title",
       message: "What is your Project Title? (Required)",
-      validate: (nameInput) => {
-        if (nameInput) {
+      validate: (titleInput) => {
+        if (titleInput) {
           return true;
         } else {
           console.log("Please enter your Project Title!");
@@ -27,11 +27,41 @@ const questions = () => {
         if (descriptionInput) {
           return true;
         } else {
-          console.log("Please enter your Project description!");
+          console.log("Please enter a description for your Project!");
           return false;
         }
       },
     },
+    {
+      type: "input",
+      name: "installation",
+      message: "Enter installation instructions for your Project",
+    },
+    {
+        type: "input",
+        name: "installation",
+        message: "Enter installation instructions for your Project",
+      },
+      {
+        type: "input",
+        name: "installation",
+        message: "Enter installation instructions for your Project",
+      },
+      {
+        type: "input",
+        name: "installation",
+        message: "Enter installation instructions for your Project",
+      },
+      {
+        type: "input",
+        name: "installation",
+        message: "Enter installation instructions for your Project",
+      },
+      {
+        type: "input",
+        name: "installation",
+        message: "Enter installation instructions for your Project",
+      },
   ]);
 };
 
