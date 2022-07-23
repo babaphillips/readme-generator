@@ -80,13 +80,13 @@ const questions = () => {
 
 // TODO: Create a function to initialize app
 questions().then((readmeData) => {
-    // TODO: Create a function to write README file
-  fs.writeFile(".dist/README.md", generateMarkdown(readmeData), (err) => {
+  // TODO: Create a function to write README file
+  fs.writeFile("./dist/README.md", generateMarkdown(readmeData), (err) => {
     if (err) throw new Error(err);
-
-    console.log(
-      "Page created! Check out index.html in this directory to see it!"
-    );
+    else
+      console.log(
+        "README created! Check out README.md in the dist folder to see it!"
+      );
   });
 });
 
