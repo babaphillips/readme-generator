@@ -38,29 +38,35 @@ const questions = () => {
       message: "Enter installation instructions for your Project",
     },
     {
+      type: "input",
+      name: "usage",
+      message: "Enter usage information for your Project",
+    },
+    {
+      type: "list",
+      name: "license",
+      message: "Select the license used in your Project",
+      choices: ["No License", "Apache 2-0", "BSD", "GPL-3.0", "MIT"],
+    },
+    {
+      type: "input",
+      name: "contributing",
+      message: "Enter contributions to your Project",
+    },
+    {
+      type: "input",
+      name: "tests",
+      message: "Enter test instructions for your Project",
+    },
+    {
+      type: "input",
+      name: "githubUser",
+      message: "Enter your GitHub username",
+    },
+    {
         type: "input",
-        name: "installation",
-        message: "Enter installation instructions for your Project",
-      },
-      {
-        type: "input",
-        name: "installation",
-        message: "Enter installation instructions for your Project",
-      },
-      {
-        type: "input",
-        name: "installation",
-        message: "Enter installation instructions for your Project",
-      },
-      {
-        type: "input",
-        name: "installation",
-        message: "Enter installation instructions for your Project",
-      },
-      {
-        type: "input",
-        name: "installation",
-        message: "Enter installation instructions for your Project",
+        name: "email",
+        message: "Enter email address,
       },
   ]);
 };
