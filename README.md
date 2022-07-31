@@ -1,9 +1,9 @@
-# a
-![License](https://img.shields.io/badge/License-MPL_2.0-lightblue.svg)
+# README Generator
+![License](https://img.shields.io/badge/License-MIT-lightblue.svg)
       
 ## Description:
 
-a
+For this weekly challenge, the task is to generate a README file by using a command-line application. The created README file will have the user's input which was captured by using the Inquirer package.
   
 ## Contents
 - [Installation](#installation)
@@ -16,11 +16,11 @@ a
 
 ## Installation
 
-a
+To clone this repo, open your terminal and run this: git clone git@github.com:babaphillips/readme-generator.git. Run 'npm install' to install all dependencies. Run node index.js to run the program.
 
 ## Usage 
 
-a
+This project can be used to generate a professional README based on the captured user's input.
 
 ## Visuals
 
@@ -28,15 +28,15 @@ a
 
 ## License
     
-  This application is licensed under the MPL_2.0 license.
+  This application is licensed under the MIT license.
 
 ## Contributing
 
-a
+When contributing to this repo, please first discuss the change you wish to make via issue, email or any other method with the owner of this repo, before making any changes.
 
 ## Tests
 
-a
+None
 
 ## Questions?
 
