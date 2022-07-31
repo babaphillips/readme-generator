@@ -16,7 +16,7 @@ For this weekly challenge, the task is to generate a README file by using a comm
 
 ## Installation
 
-To clone this repo, open your terminal and run this: git clone git@github.com:babaphillips/readme-generator.git. Run 'npm install' to install all dependencies. Run node index.js to run the program.
+To clone this repo, open your terminal and run: git clone git@github.com:babaphillips/readme-generator.git. Run 'npm install' to install all dependencies. Run node index.js to run the program.
 
 ## Usage 
 
@@ -24,7 +24,7 @@ This project can be used to generate a professional README based on the captured
 
 ## Visuals
 
-[Youtube](https://youtu.be/heeDaVLxCxg)
+[Youtube](https://youtu.be/z0DZHH_MMV8)
 
 ## License
     
@@ -32,7 +32,7 @@ This project can be used to generate a professional README based on the captured
 
 ## Contributing
 
-When contributing to this repo, please first discuss the change you wish to make via issue, email or any other method with the owner of this repo, before making any changes.
+When contributing to this repository, please first discuss the change you wish to make via issue, email or any other method with the owner of this repo, before making any changes.
 
 ## Tests
 
