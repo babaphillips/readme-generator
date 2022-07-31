@@ -66,6 +66,19 @@ const questions = () => {
       },
     },
     {
+      type: "input",
+      name: "youtube",
+      message: "Enter link to Youtube walkthrough video:",
+      validate: (youtubeInput) => {
+        if (youtubeInput) {
+          return true;
+        } else {
+          console.log("Please enter your Youtube link");
+          return false;
+        }
+      },
+    },
+    {
       type: "list",
       name: "license",
       message: "Select the license used in your Project",

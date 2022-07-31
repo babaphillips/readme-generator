@@ -40,9 +40,10 @@ ${renderLicenseBadge(inputData.license)}
 
 ${inputData.description}
   
-## Table of Content
+## Contents
 - [Installation](#installation)
 - [Usage](#usage)
+- [Visuals](#visuals)
 ${renderLicenseLink(inputData.license)}
 - [Contributing](#contributing)
 - [Tests](#tests)
@@ -55,6 +56,10 @@ ${inputData.installation}
 ## Usage 
 
 ${inputData.usage}
+
+## Visuals
+
+[Youtube](${inputData.youtube})
 
 ${renderLicenseSection(inputData.license)}
 
