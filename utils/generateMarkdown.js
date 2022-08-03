@@ -3,9 +3,8 @@
 function renderLicenseBadge(license) {
   if (license !== "No License") {
     return `![License](https://img.shields.io/badge/License-${license}-lightblue.svg)`;
-  } 
-    return ``;
-
+  }
+  return ``;
 }
 
 // Create a function that returns the license link
@@ -15,9 +14,8 @@ function renderLicenseBadge(license) {
 function renderLicenseLink(license) {
   if (license !== "No License") {
     return `- [License](#license)`;
-  } 
-    return ``;
-  
+  }
+  return ``;
 }
 
 // Create a function that returns the license section of README
@@ -30,12 +28,22 @@ function renderLicenseSection(license) {
   }
   return ``;
 }
+
+// function generateBadgeLanguage(badge) {
+//   if (badge !== "No Badge") {
+//     return `![Badge](https://img.shields.io/badge/${badge}-E34F26?style=for-the-badge&logo=html5&logoColor=white)`;
+//   }
+//   return ``;
+// }
+
 // Create a function to generate markdown for README
 //function generateMarkdown(data) {
 module.exports = (inputData) => {
   return `# ${inputData.title}
 ${renderLicenseBadge(inputData.license)}
       
+${generateBadgeLanguage(inputData.badge)}
+
 ## Description:
 
 ${inputData.description}
@@ -73,7 +81,9 @@ ${inputData.tests}
 
 ## Questions?
 
-Check out my other projects at my Github here: [Github](https://github.com/${inputData.github})
+Check out my other projects at my Github here: [Github](https://github.com/${
+    inputData.github
+  })
 
 How To Reach Me For Additional Questions: ${inputData.email}
 `;

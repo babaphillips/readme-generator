@@ -39,6 +39,21 @@ const questions = () => {
         }
       },
     },
+    // {
+    //   type: "checkbox",
+    //   name: "languages",
+    //   message: "What did you this project with? (Check all that apply)",
+    //   choices: [
+    //     "JavaScript",
+    //     "HTML",
+    //     "CSS",
+    //     "ES6",
+    //     "jQuery",
+    //     "Bootstrap",
+    //     "Node",
+    //     "No Badge",
+    //   ],
+    // },
     {
       type: "input",
       name: "installation",
@@ -151,9 +166,6 @@ questions().then((readmeData) => {
   // Create a function to write README file
   fs.writeFile("README.md", renderReadme(readmeData), (err) => {
     if (err) throw new Error(err);
-    else
-      console.log(
-        "README.md created!"
-      );
+    else console.log("README.md created!");
   });
 });
